@@ -1,0 +1,283 @@
+body {
+  background-color: green;
+}
+.zone {
+  height: 100px;
+  width: 75px;
+  border: 1px solid Bisque;
+  position: absolute;
+}
+
+#game-board {
+  position: relative;
+  width: 900px;
+  height: 700px;
+  left: 8%;
+  max-width: 900px;
+  min-width: 500px;
+}
+
+#directions-container {
+  position: relative;
+  top: 90%;
+  left: 75%;
+  color: Bisque;
+}
+
+#landing-page-container {
+  position: fixed;
+  left: 19%;
+  top: 50px;
+  /* border: solid 1px white; */
+  width: 700px;
+  height: 500px;
+  max-width: 700px;
+  min-width: 500px;
+}
+
+#author {
+  position: relative;
+  font-size: 20px;
+  color: Bisque;
+  top: -12%;
+  left: 31%;
+}
+
+#landing-page-heading {
+  position: relative;
+  left: 33%;
+  color: Bisque;
+  font-size: 100px;
+}
+
+form {
+  position: relative;
+  font-size: 20px;
+  color: Bisque;
+  top: 45%;
+  left: 21%;
+}
+
+#player1-play-area {
+  top: 299px;
+  left: 60%;
+  background-size: cover;
+}
+
+#player2-play-area {
+  top: 300px;
+  left: 34%;
+  background-size: cover;
+}
+
+#player1-hand {
+  top: 565px;
+  left: 47%;
+  background-size: cover;
+}
+
+#player2-hand {
+  top: 35px;
+  left: 47%;
+  background-size: cover;
+}
+
+#deck-area {
+  left: 47%;
+  top: 300px;
+  background-size: cover;
+}
+
+#p1-deck-count {
+  position: relative;
+  color: Bisque;
+  left: -90px;
+  top: -60px;
+}
+
+#p2-deck-count {
+  position: relative;
+  color: Bisque;
+  left: -90px;
+  top: -60px;
+}
+
+#you-win {
+  position: relative;
+  color: Bisque;
+  left: 28%;
+  top: 280px;
+  font-size: 100px;
+}
+
+#you-lose {
+  position: relative;
+  color: Bisque;
+  left: 24%;
+  top: 280px;
+  font-size: 100px;
+}
+
+#war-state-alert {
+  position: absolute;
+  color: Bisque;
+  left: -10%;
+  top: 120px;
+  color: DarkOliveGreen;
+  text-shadow: white 1px 0 10px;
+}
+
+#dogs-playing-poker {
+  position: absolute;
+  left: 180px;
+  top: 250px;
+  width: 50%;
+  height: 50%;
+}
+@media only screen and (max-width: 960px) {
+  #landing-page-container {
+    position: relative;
+    left: 10%;
+    top: 30px;
+    /* border: solid 1px white; */
+    height: 450px;
+    width: 600px;
+    max-width: 600px;
+    min-width: 300px;
+  }
+  #game-board {
+    position: fixed;
+    max-width: 600px;
+    min-width: 400px;
+    max-height: 400px;
+    min-height: 300px;
+    left: 12%;
+  }
+  #player1-play-area {
+    position: relative;
+    left: 70%;
+  }
+  #player2-play-area {
+    position: relative;
+    left: 24%;
+    top: 199px;
+  }
+  #player1-hand {
+    top: 425px;
+    left: 47%;
+    background-size: cover;
+  }
+
+  #player2-hand {
+    top: 175px;
+    left: 47%;
+    background-size: cover;
+  }
+  #p1-deck-count {
+    position: relative;
+    color: Bisque;
+    top: -70%;
+  }
+
+  #p2-deck-count {
+    position: relative;
+    color: Bisque;
+    top: -70%;
+  }
+  #dogs-playing-poker {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 45%;
+    left: 34%;
+  }
+  #directions-container {
+    position: relative;
+    top: 70%;
+    left: 70%;
+    color: Bisque;
+  }
+  #you-win {
+    position: relative;
+    color: Bisque;
+    left: 28%;
+    top: 10%;
+    font-size: 50px;
+  }
+
+  #you-lose {
+    position: relative;
+    color: Bisque;
+    left: 24%;
+    top: 10%;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #landing-page-container {
+    position: fixed;
+    left: 8%;
+    top: 10px;
+    /* border: solid 1px white; */
+    height: 100px;
+    width: 300px;
+  }
+  form {
+    position: relative;
+    left: 120px;
+  }
+  #game-board {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    max-height: 100px;
+    max-width: 300px;
+    top: -120px;
+    left: 70px;
+  }
+  #player1-play-area {
+    position: relative;
+    left: 80%;
+  }
+  #player2-play-area {
+    position: relative;
+    left: 14%;
+  }
+  #p1-deck-count {
+    font-size: 90%;
+    position: relative;
+    color: Bisque;
+    left: -16%;
+    top: -45%;
+  }
+
+  #p2-deck-count {
+    font-size: 90%;
+    position: relative;
+    color: Bisque;
+    left: -16%;
+    top: -45%;
+  }
+  #dogs-playing-poker {
+    position: absolute;
+    height: 110%;
+    width: 50%;
+    top: 215%;
+    left: 47%;
+  }
+  #author {
+    position: relative;
+    top: -70%;
+  }
+  #directions-container {
+    position: relative;
+    font-size: 10px;
+    top: 110%;
+    left: 85%;
+    color: Bisque;
+  }
+  #war-state-alert {
+    position: absolute;
+    top: 10%;
+  }
+}
