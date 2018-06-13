@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>War! the Card Game</title>
-    <link rel= "stylesheet" href= "css/style.css"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Sunflower:700" rel="stylesheet">
+    <link rel= "stylesheet" href= "css/style.css">
   </head>
   <body>
-    <div id="landing-page-container">
-      <h1 id="landing-page-heading">WAR</h1>
-      <h3 id="author">the card game by Pete LaMalfa</h3>
-      <!--- "A Friend in Need" by C.M. Coolidge -->
-      <img id="dogs-playing-poker" src="images/dogsPlayingPoker.png">
-      <form id=“form”> Please type your name here: <input type="text" name="name" id="uniqueID" value="Name">
-	     <button id="button">Submit</button>
+    <div class="container h-100 text-center" id="landing-page-container">
+      <div class="row">
+        <h1 class="header">WAR</h1>
+      </div>
+      <div class="row">
+        <h3 class="header">the card game by Pete LaMalfa</h3>
+      </div>
+      <br>
+      <div class="row">
+        <img id="image" src="images/logo.svg">
+      </div>
+      <br>
+      <div class="row">
+        <form id=“form”> Please type your name here:
+      </div>
+      <br>
+      <div class="row">
+        <input type="text" name="name" id="uniqueID" placeholder="Name">
+       <button id="button">Submit</button>
+     </div>
     </div>
     <div id="game-board">
       <div class="zone" id="deck-area">

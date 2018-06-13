@@ -1,11 +1,43 @@
+html {
+  height: 100%;
+}
+
 body {
-  background-color: green;
+  background-color: #006600;
+  color: #d8d0a2;
+  height: 100%;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+form {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input {
+  color: black;
+}
+
+button {
+  color: black;
+}
+
+.header {
+  font-family: "Sunflower", sans-serif;
 }
 .zone {
   height: 100px;
   width: 75px;
   border: 1px solid Bisque;
   position: absolute;
+}
+
+#image {
+  height: 50%;
+  width: 50%;
 }
 
 #game-board {
@@ -20,7 +52,7 @@ body {
 #directions-container {
   position: relative;
   top: 90%;
-  left: 75%;
+  left: 65%;
   color: Bisque;
 }
 
@@ -35,27 +67,11 @@ body {
   min-width: 500px;
 }
 
-#author {
-  position: relative;
-  font-size: 20px;
-  color: Bisque;
-  top: -12%;
-  left: 31%;
-}
-
 #landing-page-heading {
   position: relative;
   left: 33%;
   color: Bisque;
   font-size: 100px;
-}
-
-form {
-  position: relative;
-  font-size: 20px;
-  color: Bisque;
-  top: 45%;
-  left: 21%;
 }
 
 #player1-play-area {
@@ -89,16 +105,18 @@ form {
 }
 
 #p1-deck-count {
+  font-size: 30px;
   position: relative;
   color: Bisque;
-  left: -90px;
+  left: -75px;
   top: -60px;
 }
 
 #p2-deck-count {
+  font-size: 30px;
   position: relative;
   color: Bisque;
-  left: -90px;
+  left: -75px;
   top: -60px;
 }
 
@@ -126,25 +144,24 @@ form {
   color: DarkOliveGreen;
   text-shadow: white 1px 0 10px;
 }
-
-#dogs-playing-poker {
-  position: absolute;
-  left: 180px;
-  top: 250px;
-  width: 50%;
-  height: 50%;
-}
 @media only screen and (max-width: 960px) {
-  #landing-page-container {
+  form,
+  input,
+  button {
     position: relative;
-    left: 10%;
-    top: 30px;
-    /* border: solid 1px white; */
-    height: 450px;
-    width: 600px;
-    max-width: 600px;
-    min-width: 300px;
+    right: 70px;
   }
+
+  .header {
+    position: relative;
+    right: 70px;
+  }
+
+  #image {
+    position: relative;
+    right: 70px;
+  }
+
   #game-board {
     position: fixed;
     max-width: 600px;
@@ -174,15 +191,19 @@ form {
     background-size: cover;
   }
   #p1-deck-count {
+    font-size: 25px;
     position: relative;
     color: Bisque;
-    top: -70%;
+    left: -10%;
+    top: -55%;
   }
 
   #p2-deck-count {
+    font-size: 25px;
     position: relative;
     color: Bisque;
-    top: -70%;
+    left: -10%;
+    top: -58%;
   }
   #dogs-playing-poker {
     position: absolute;
@@ -193,8 +214,8 @@ form {
   }
   #directions-container {
     position: relative;
-    top: 70%;
-    left: 70%;
+    top: 95%;
+    left: 30%;
     color: Bisque;
   }
   #you-win {
@@ -214,25 +235,30 @@ form {
   }
 }
 @media only screen and (max-width: 640px) {
-  #landing-page-container {
-    position: fixed;
-    left: 8%;
-    top: 10px;
-    /* border: solid 1px white; */
-    height: 100px;
-    width: 300px;
-  }
-  form {
+  form,
+  input,
+  button {
     position: relative;
-    left: 120px;
+    right: 140px;
   }
+
+  .header {
+    position: relative;
+    right: 140px;
+  }
+
+  #image {
+    position: relative;
+    right: 140px;
+  }
+
   #game-board {
     position: relative;
     height: 100px;
     width: 300px;
     max-height: 100px;
     max-width: 300px;
-    top: -120px;
+    top: -70px;
     left: 70px;
   }
   #player1-play-area {
@@ -244,40 +270,32 @@ form {
     left: 14%;
   }
   #p1-deck-count {
-    font-size: 90%;
+    font-size: 20px;
     position: relative;
     color: Bisque;
-    left: -16%;
-    top: -45%;
+    left: -15%;
+    top: -60%;
   }
 
   #p2-deck-count {
-    font-size: 90%;
+    font-size: 20px;
     position: relative;
     color: Bisque;
-    left: -16%;
-    top: -45%;
-  }
-  #dogs-playing-poker {
-    position: absolute;
-    height: 110%;
-    width: 50%;
-    top: 215%;
-    left: 47%;
-  }
-  #author {
-    position: relative;
-    top: -70%;
+    left: -15%;
+    top: -65%;
   }
   #directions-container {
     position: relative;
-    font-size: 10px;
-    top: 110%;
-    left: 85%;
+    font-size: 15px;
+    top: 150%;
+    left: 20%;
     color: Bisque;
   }
-  #war-state-alert {
+  #war-state-alert,
+  #you-lose,
+  #you-win {
     position: absolute;
-    top: 10%;
+    top: 20%;
+    right: 10%;
   }
 }
